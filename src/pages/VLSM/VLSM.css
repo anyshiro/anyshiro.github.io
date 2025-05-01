@@ -1,0 +1,96 @@
+.vlsm-page {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  .vlsm-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .config-section {
+    padding: 1.5rem;
+  }
+  
+  .input-group {
+    display: grid;
+    gap: 2rem;
+  }
+  
+  .network-config,
+  .subnets-config {
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  .subnet-list {
+    display: grid;
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+  
+  .subnet-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+    background: var(--card-bg);
+    border-radius: 1rem;
+  }
+  
+  .vlsm-input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.75rem;
+    background: var(--bg-body);
+    color: var(--text-primary);
+  }
+  
+  .vlsm-btn {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 0.75rem;
+    background: var(--primary);
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .vlsm-btn.danger {
+    background: var(--alert-error-bg);
+    color: var(--alert-error-text);
+  }
+  
+  .vlsm-btn:hover {
+    transform: translateY(-2px);
+  }
+  
+  .results-section {
+    padding: 1.5rem;
+  }
+  
+  .results-grid {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .subnet-item {
+      grid-template-columns: 1fr;
+    }
+    
+    .vlsm-input {
+      width: 100%;
+    }
+    
+    .vlsm-btn {
+      width: 100%;
+      text-align: center;
+    }
+  }

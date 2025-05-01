@@ -1,0 +1,88 @@
+/* Импорт тем и шрифтов */
+@import 'light-theme.css';
+@import 'dark-theme.css';
+@import 'fonts.css';
+
+
+[data-theme="light"] {
+    @import 'light-theme.css';
+  }
+  
+  [data-theme="dark"] {
+    @import 'dark-theme.css';
+  }
+
+/* Базовые сбросы стилей */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: 
+    background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out,
+    border-color 0.3s ease-in-out;
+}
+
+/* Основные стили */
+body {
+  font-family: 'Inter', system-ui;
+  background-color: var(--bg-body);
+  color: var(--text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+/* Стеклянные эффекты */
+.glass-panel {
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px) saturate(180%);
+  border: var(--glass-border);
+  border-radius: 1.5rem;
+  box-shadow: var(--shadow-md);
+}
+
+/* Типографика */
+h1, h2, h3 {
+  font-family: 'Fira Code', monospace;
+  line-height: 1.2;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+/* Контейнеры */
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+
+/* Принудительное применение тем */
+
+/* Анимации */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fade-in 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}

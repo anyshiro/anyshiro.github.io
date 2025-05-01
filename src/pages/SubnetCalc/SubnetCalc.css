@@ -1,0 +1,35 @@
+.subnet-page {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  .config-section {
+    padding: 2rem;
+    margin: 2rem 0;
+  }
+  
+  .input-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .results-section {
+    padding: 1.5rem;
+    margin-top: 0rem;
+  }
+  
+  .results-section table {
+    width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .config-section {
+      padding: 1rem;
+    }
+  
+    .input-group {
+      grid-template-columns: 1fr;
+    }
+  }
