@@ -1,62 +1,33 @@
 {
-    "name": "net-admin-tools",
-    "version": "1.0.0",
-    "private": true,
-    "dependencies": {
-      "react": "^18.2.0",
-      "react-dom": "^18.2.0",
-      "react-router-dom": "^6.23.0",
-      "ipaddr.js": "^2.1.0",
-      "bootstrap": "^5.3.3",
-      "sass": "^1.70.0",
-      "react-scripts": "5.0.1",
-      "web-vitals": "^2.1.4"
-    },
-    "devDependencies": {
-      "prettier": "^3.2.5",
-      "eslint": "^8.56.0",
-      "eslint-plugin-react": "^7.33.2"
-    },
-    "scripts": {
-      "start": "react-scripts start",
-      "build": "react-scripts build",
-      "test": "react-scripts test",
-      "eject": "react-scripts eject",
-      "lint": "eslint src --ext .js,.jsx",
-      "format": "prettier --write src/**/*.{js,jsx,css}"
-    },
-    "eslintConfig": {
-      "extends": [
-        "react-app",
-        "react-app/jest"
-      ]
-    },
-    "browserslist": {
-      "production": [
-        ">0.2%",
-        "not dead",
-        "not op_mini all"
-      ],
-      "development": [
-        "last 1 chrome version",
-        "last 1 firefox version",
-        "last 1 safari version"
-      ]
-    },
-    "description": "Network administration toolkit for IPv4 management",
-    "keywords": [
-      "ipv4",
-      "subnet",
-      "network",
-      "calculator",
-      "converter"
-    ],
-    "author": "Your Name <your.email@example.com>",
-    "license": "MIT"
-    
-    "homepage": "https://ваш-логин.github.io/ваш-репозиторий",
-    "scripts": {
+  "name": "net-admin-tools",
+  "version": "1.0.0",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
-    }
+  },
+  "homepage": "https://anyshiro.github.io/",
+  "devDependencies": {
+    "gh-pages": "^6.1.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
+}
