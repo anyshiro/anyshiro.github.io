@@ -14,9 +14,9 @@ function App() {
       <main className="main-content">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/converter" element={<Converter />} />
-          <Route path="/subnet-calc" element={<SubnetCalc />} />
-          <Route path="/vlsm" element={<VLSM />} />
+          <Route path="/#converter" element={<Converter />} />
+          <Route path="/#subnet-calc" element={<SubnetCalc />} />
+          <Route path="/#vlsm" element={<VLSM />} />
         </Routes>
       </main>
     </Router>
